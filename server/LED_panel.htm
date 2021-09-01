@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML file head: web page metadata -->
+	<head>
+		<title>LED Panel</title>
+		<!-- jQuery -->
+		
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+		
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<!-- Chart.js library -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		
+		<script type="text/javascript" src="scripts/LED_panel.js"></script> 
+		<link rel="stylesheet" type="text/css" href="styles/datagrabber_example_css.css">
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+
+	<!-- HTML file body: web page content -->
+	<body>
+		<h1 class="text">LED control panel</h1>
+		
+		<div class="LEDpanel">
+        <div>
+           <button id="l0" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l1" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l2" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l3" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l4" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l5" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l6" class="LEDitem" onclick="ledHandler(id)"></button>
+           <button id="l7" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l8" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l9" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l10" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l11" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l12" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l13" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l14" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l15" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l16" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l17" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l18" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l19" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l20" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l21" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l22" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l23" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l24" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l25" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l26" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l27" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l28" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l29" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l30" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l31" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l32" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l33" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l34" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l35" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l36" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l37" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l38" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l39" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l40" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l41" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l42" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l43" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l44" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l45" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l46" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l47" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l48" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l49" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l50" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l51" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l52" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l53" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l54" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l55" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+        <div>
+         <button id="l56" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l57" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l58" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l59" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l60" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l61" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l62" class="LEDitem" onclick="ledHandler(id)"></button>
+         <button id="l63" class="LEDitem" onclick="ledHandler(id)"></button>
+        </div>
+		
+    </div>
+	
+
+	<h1 class="text"> Click to choose color</h1>
+	<div class="Colorbox">
+	<input type="color" id="colorpicker" class="Colorbox" value="#ffffff" change="updateValue()">
+	</div>
+	<div class="ResetDiv">
+	<button id="preset_btn1" class="ResetItem" onclick="resetAllHandler(id)">ResetAll</button>
+	<button id="reset_btn" class="ResetItem" onclick="resetOneHandler(id)">ResetOne</button>
+	
+	<button id="preset_btn2" class="PresetItem" onclick="presetHandler()"></button>
+	</div>
+  
+</div>
+	</body>
+
+</html>
