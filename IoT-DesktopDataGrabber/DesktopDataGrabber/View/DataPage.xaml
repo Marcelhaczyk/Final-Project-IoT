@@ -1,0 +1,199 @@
+﻿<Page x:Class="DesktopDataGrabber.View.DataPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:DesktopDataGrabber.ViewModel"
+            
+                 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DataPage">
+
+    <Page.DataContext>
+        <vm:MainViewModel/>
+    </Page.DataContext>
+
+
+
+    <Grid>
+        <TextBlock
+            x:Name="Preassure"
+            Margin="179,100,0,330" 
+            Width="109" 
+            HorizontalAlignment="Left"/>
+        <TextBlock
+            x:Name="SX"
+            Margin="179,263,0,167" 
+            Width="109"
+            HorizontalAlignment="Left"/>
+        <TextBlock
+            x:Name="SY"
+            Margin="400,263,0,167" 
+            Width="109" 
+            HorizontalAlignment="Left"/>
+        <TextBlock
+            x:Name="SS"
+            Margin="637,263,0,167" 
+            Width="109"
+            HorizontalAlignment="Left"/>
+        <TextBlock
+            x:Name="Humidity"
+            Margin="373,100,318,330" 
+            Width="109"
+            HorizontalAlignment="Right" RenderTransformOrigin="0.122,0.45"/>
+        <TextBlock 
+            x:Name="Temperature"
+            Margin="637,100,0,330" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="Pitch"
+            Margin="179,177,0,253" 
+            Width="109" 
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="Roll"
+            Margin="400,177,0,253" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="Yaw"
+            Margin="637,177,0,253" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="MX"
+            Margin="179,356,0,74" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="MY"
+            Margin="400,356,0,74" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="MZ"
+            Margin="637,356,0,74" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="AX"
+            Margin="179,439,0,-9" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="AY"
+            Margin="400,439,0,-9" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            x:Name="AZ"
+            Margin="637,439,0,-9" 
+            Width="109"
+            HorizontalAlignment="Left" 
+            />
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="140,72,559,362" 
+            Text="Pressure [mbar]: " VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="140,229,575,205" 
+            Text="Joystick [X]: " VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="368,229,347,205" 
+            Text="Joystick [Y]: " VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="607,229,108,205" 
+            Text="Joystick [Z]: " VerticalAlignment="Center" RenderTransformOrigin="0.471,0.312" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="140,152,570,282" 
+            Text="Pitch [Degrees]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="607,152,108,282" 
+            Text="Yaw [Degrees]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="368,152,347,282" 
+            Text="Roll [Degrees]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="350,36,337,395" 
+            Text="Weather factors: " VerticalAlignment="Center" Foreground="#FF982020" FontSize="16"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="382,120,318,309" 
+            Text="Swing: " VerticalAlignment="Center" Foreground="#FF982020" FontSize="16"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="377,197,323,232" 
+            Text="Joystick: " VerticalAlignment="Center" Foreground="#FF982020" FontSize="16"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="344,283,302,145" 
+            Text="Magnetometer Data: " VerticalAlignment="Center" Foreground="#FF982020" FontSize="16"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="344,372,310,57" 
+            Text="Accelerometer Data: " VerticalAlignment="Center" Foreground="#FF982020" FontSize="16" RenderTransformOrigin="0.503,0.402"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="317,-8,273,427" 
+            Text="Measurements Data" VerticalAlignment="Center" FontFamily="Viner Hand ITC" Height="31" FontSize="22"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="368,70,352,364" 
+            Text="Humidity [%]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="607,72,84,362" 
+            Text="Temperature [°C]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="140,322,553,112" 
+            Text="Magnetic X [A/m]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="140,407,526,27" 
+            Text="Acceleration X [m/s^2]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="368,407,298,27" 
+            Text="Acceleration Y [m/s^2]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="607,407,59,27" 
+            Text="Acceleration Z [m/s^2]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="368,322,325,112" 
+            Text="Magnetic Y [A/m]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock 
+            Grid.Column="0" 
+            Margin="607,322,89,112" 
+            Text="Magnetic Z [A/m]:" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Button 
+            Grid.Column="0" 
+            Width="98"
+            Margin="0,14,702,427"   
+            Command="{Binding StartButton}" HorizontalAlignment="Right" Content="Connect" RenderTransformOrigin="2.163,3.296" FontStyle="Italic" Background="#FF3DC422" FontSize="14"/>
+        <Button 
+            Grid.Column="0"
+            Margin="25,53,702,388"   
+            Content="Refresh" Click="Button_Click" RenderTransformOrigin="0.5,0.5" FontStyle="Italic" Background="#FF9BA8E5" FontSize="14"/>
+    </Grid>
+</Page>
